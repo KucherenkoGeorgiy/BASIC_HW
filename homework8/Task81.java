@@ -20,7 +20,7 @@ public class Task81 {
             }
         }
 
-        System.out.println("Количество совпадений: " + quantityOfMatches);
+        System.out.println("Quantity of matches: " + quantityOfMatches);
 
     }
 
