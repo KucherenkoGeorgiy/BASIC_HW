@@ -4,8 +4,11 @@ import java.util.Arrays;
 
 public class Task81 {
     public static void main(String[] args) {
-        int[] arrayOfCompany = createArray(0, 9, 7);
-        int[] arrayOfPlayer = createArray(0, 9, 7);
+        int minArrayValue = 0;
+        int maxArrayValue = 9;
+        int quantityOfValues = 7;
+        int[] arrayOfCompany = createArray(minArrayValue, maxArrayValue, quantityOfValues);
+        int[] arrayOfPlayer = createArray(minArrayValue, maxArrayValue, quantityOfValues);
         int quantityOfMatches = 0;
 
         Arrays.sort(arrayOfCompany);
@@ -24,10 +27,10 @@ public class Task81 {
 
     }
 
-    static int[] createArray(int fromValue, int toValue, int quantityOfValues) {
+    static int[] createArray(int minArrayValue, int maxArrayValue, int quantityOfValues) {
         int[] newArray = new int[quantityOfValues];
         for (int i = 0; i < quantityOfValues; i++) {
-            newArray[i] = (int) (Math.random() * (toValue - fromValue + 1)) + fromValue;
+            newArray[i] = (int) (Math.random() * (maxArrayValue - minArrayValue + 1)) + minArrayValue;
         }
         return newArray;
     }
