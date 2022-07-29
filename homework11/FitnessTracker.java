@@ -32,19 +32,19 @@ public class FitnessTracker {
         printAccountInfo(client5);
         System.out.println("\nMaking some changes to 3 first Clients..:");
 
-        client1.usersStepsCounter += 1500;
-        client1.usersPressure = "135 / 91";
-        client1.usersWeight = 66.8;
+        client1.setUsersStepsCounter(client1.getUsersStepsCounter() + 1500);
+        client1.setUsersPressure("135 / 91");
+        client1.setUsersWeight(66.8);
         printAccountInfo(client1);
 
-        client2.usersStepsCounter += 2123;
-        client2.usersPressure = "119 / 83";
-        client2.usersWeight = 75.9;
+        client2.setUsersStepsCounter(client2.getUsersStepsCounter() + 2123);
+        client2.setUsersPressure("119 / 83");
+        client2.setUsersWeight(75.9);
         printAccountInfo(client2);
 
-        client3.usersStepsCounter += 981;
-        client3.usersPressure = "129 / 87";
-        client3.usersWeight = 46.3;
+        client3.setUsersStepsCounter(client2.getUsersStepsCounter() + 500);
+        client3.setUsersPressure("129 / 87");
+        client3.setUsersWeight(46.3);
         client3.setUsersLastName("Adamenko");
         printAccountInfo(client3);
     }
@@ -55,9 +55,9 @@ public class FitnessTracker {
                 + fitnessClient.getUSERS_BIRTH_DATE() + " " + fitnessClient.getUSERS_BIRTH_MONTH()
                 + " " + fitnessClient.getUSERS_BIRTH_YEAR() + ", age: " + fitnessClient.getUSERS_AGE()
                 + ", " + fitnessClient.getUSERS_CELL_PHONE()
-                + ", " + fitnessClient.getUSERS_EMAIL() + ", weight: " + fitnessClient.usersWeight
-                + " kg, pressure: " + fitnessClient.usersPressure + ", steps quantity: "
-                + fitnessClient.usersStepsCounter;
+                + ", " + fitnessClient.getUSERS_EMAIL() + ", weight: " + fitnessClient.getUsersWeight()
+                + " kg, pressure: " + fitnessClient.getUsersPressure() + ", steps quantity: "
+                + fitnessClient.getUsersStepsCounter();
         System.out.println(accountInfo);
     }
 

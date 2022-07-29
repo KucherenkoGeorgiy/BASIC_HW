@@ -9,9 +9,9 @@ public class FitnessClient {
     private final int USERS_BIRTH_YEAR;
     private final String USERS_CELL_PHONE;
     private final String USERS_EMAIL;
-    double usersWeight;
-    String usersPressure;
-    int usersStepsCounter;
+    private double usersWeight;
+    private String usersPressure;
+    private int usersStepsCounter;
     private final int USERS_AGE;
 
     public FitnessClient(String USERS_FIRST_NAME, String usersLastName, int USERS_BIRTH_DATE,
@@ -65,5 +65,29 @@ public class FitnessClient {
 
     public String getUsersLastName() {
         return usersLastName;
+    }
+
+    public double getUsersWeight() {
+        return usersWeight;
+    }
+
+    public void setUsersWeight(double usersWeight) {
+        this.usersWeight = usersWeight;
+    }
+
+    public String getUsersPressure() {
+        return usersPressure;
+    }
+
+    public void setUsersPressure(String usersPressure) {
+        this.usersPressure = usersPressure;
+    }
+
+    public int getUsersStepsCounter() {
+        return usersStepsCounter;
+    }
+
+    public void setUsersStepsCounter(int usersStepsCounter) {
+        this.usersStepsCounter = usersStepsCounter;
     }
 }
