@@ -1,4 +1,4 @@
-package com.hillel.kucherenko.homework18;
+package com.hillel.kucherenko.homework17;
 
 public class ArrayUtils {
 

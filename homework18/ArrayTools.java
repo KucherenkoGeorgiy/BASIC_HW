@@ -1,4 +1,4 @@
-package com.hillel.kucherenko.homework19;
+package com.hillel.kucherenko.homework18;
 
 import java.util.Arrays;
 
