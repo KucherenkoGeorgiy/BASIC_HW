@@ -52,6 +52,7 @@ public class DataBaseProcessor {
                 System.out.println("Name " + lastname + " phone " + phone);
             }
 
+
             System.out.println(resultSet);
 
 
